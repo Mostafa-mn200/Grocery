@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_all_img"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/purple_700"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fish" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/view_all_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alice"/>
+
+            <TextView
+                android:id="@+id/view_all_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Description"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:fontFamily="@font/alice"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/view_all_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price $"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/alice"/>
+                <TextView
+                    android:id="@+id/view_all_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/alice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/ratingbar"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/view_all_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="3.0"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/alice"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/copy_of_ic_baseline_arrow_forward_ios_24"
+                android:layout_gravity="end"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
